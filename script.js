@@ -30,5 +30,33 @@
             // you can put any JS code here
             alert('ส่งข้อมูลสำเร็จ')
         });
+
+        //line message push
+        fetch('https://api.line.me/v2/bot/message/push', {
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': 'Bearer ZRweCbPe5aUf5E1HG9ma+Me7ve9PdF9eeSIBevafHRMxHrXVeXNIFKDQgg9sYYZZP/tXGYNvpZd9babQrCt8bB9PzzeMSe49ydE6MGZU/mWPyD9pBYLVEmOqKJUKk+1/kWkANqE1k50DQHTXAb42VAdB04t89/1O/w1cDnyilFU='
+            }
+            ,
+            body: JSON.stringify({
+                "to": "U50f2726d03fb8e8b0f6b424eaaf0bf54",
+                "messages": [
+                    {
+                        "type": "text",
+                        "text": "มีคนส่งข้อมูลแล้ว"
+                    }
+                ]
+            })
+
+        }).then(
+            response => response.json()
+        ).then((html) => {
+            // you can put any JS code here
+            alert('ส่งข้อมูลสำเร็จ')
+        }
+        );
+
+
     });
 })()
