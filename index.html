@@ -132,10 +132,11 @@
         <div class="display-6">
             ลงทะเบียนให้เราติดต่อกลับ
         </div>
-        <form class="row g-3 needs-validation" id="form" novalidate>
+        <form class="row g-3 needs-validation" action="https://sheetdb.io/api/v1/wosq6sq5g5zm4" method="POST" id="form"
+            novalidate>
             <div class="col-md-12">
                 <label for="nameInput" class="form-label">ชื่อ-นามสกุล<span class="text-danger">*</span></label>
-                <input type="text" class="form-control" id="nameInput" value="" required>
+                <input type="text" class="form-control" name="data[Name]" id="nameInput" value="" required>
                 <div class="valid-feedback">
                 </div>
                 <div class="invalid-feedback">
@@ -145,7 +146,7 @@
 
             <div class="col-md-12">
                 <label for="phoneInput" class="form-label">เบอร์มือถือ<span class="text-danger">*</span></label>
-                <input type="tel" class="form-control" id="phoneInput" value="" required>
+                <input type="tel" class="form-control" name="data[Phone]" id="phoneInput" value="" required>
                 <div class="valid-feedback">
                 </div>
                 <div class="invalid-feedback">
@@ -155,7 +156,7 @@
 
             <div class="col-md-12">
                 <label for="lineIdInput" class="form-label">ไอดีไลน์<span class="text-danger">*</span></label>
-                <input type="text" class="form-control" id="lineIdInput" value="" required>
+                <input type="text" class="form-control" name="data[LineID]" id="lineIdInput" value="" required>
                 <div class="valid-feedback">
 
                 </div>
@@ -166,7 +167,7 @@
 
             <div class="col-md-12">
                 <label for="interestInput" class="form-label">ความสนใจ</label>
-                <input type="text" class="form-control" id="interestInput" value="" required>
+                <input type="text" class="form-control" name="data[Interest]" id="interestInput" value="" required>
                 <div class="valid-feedback">
 
                 </div>
